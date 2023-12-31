@@ -19,6 +19,7 @@ jobs:
       - name: Run linter
         run: |
           cd starter/frontend
+          npm ci
           npm run lint
 
   build-and-test:
