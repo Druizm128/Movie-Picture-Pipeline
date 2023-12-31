@@ -19,8 +19,6 @@ jobs:
       - name: Run linter
         run: |
           cd starter/frontend
-          npm ci
-          npm run build
           npm run lint
 
   build-and-test:
@@ -43,5 +41,8 @@ jobs:
     needs: [build-and-run-linter, build-and-test]
     runs-on: ubuntu-latest
     steps:
-      - name: Publish test results
-        run: echo "Build successfull!"
+      - name: Install dependencies
+        run: |
+          cd starter/frontend
+          npm ci
+          npm run build
