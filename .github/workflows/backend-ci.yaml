@@ -9,7 +9,7 @@ on:
 env:
   ECR_REPO: movie-picture-backend-repo
   EKS_CLUSTER_NAME: movie-picture-backend-cluster
-  PYTHON_VERSION: "3.10"
+  PYTHON_VERSION: "3.9"
 
 jobs:
   linter:
