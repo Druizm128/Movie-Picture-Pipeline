@@ -29,11 +29,11 @@ jobs:
           pip install -r requirements.txt
       - name: flake8 Lint
         uses: py-actions/flake8@v2
-  test:
-    runs-on: ubuntu-latest
-    steps:
+  # test:
+  #   runs-on: ubuntu-latest
+  #   steps:
 
-  build:
-    needs: [linter, test]
-    runs-on: ubuntu-latest
-    steps:
+  # build:
+  #   needs: [linter, test]
+  #   runs-on: ubuntu-latest
+  #   steps:
